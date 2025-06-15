@@ -1,1 +1,0 @@
-# rakesh-lakshmipathy.github.io
