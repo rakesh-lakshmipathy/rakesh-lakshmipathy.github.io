@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rakesh Lakshmipathy | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon/devicon.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -21,19 +18,19 @@
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about" data-aos="fade-up">
+  <section id="about">
     <h2>About Me</h2>
     <p>Mobile Lead & Architect with 13+ years of experience building Android native and cross-platform applications.</p>
   </section>
 
-  <section id="skills" data-aos="fade-up">
+  <section id="skills">
     <h2>Skills</h2>
-    <div class="floating-icons">
+    <h3>Frontend</h3>
+    <div class="grid-icons">
       <i class="devicon-android-plain colored" title="Android"></i>
       <i class="devicon-kotlin-plain colored" title="Kotlin"></i>
       <i class="devicon-java-plain colored" title="Java"></i>
@@ -41,96 +38,72 @@
       <i class="devicon-html5-plain colored" title="HTML5"></i>
       <i class="devicon-css3-plain colored" title="CSS3"></i>
       <i class="devicon-csharp-plain colored" title="C#"></i>
+    </div>
+    <h3>Backend</h3>
+    <div class="grid-icons">
       <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+      <i class="devicon-dot-net-plain colored" title=".NET"></i>
+      <i class="devicon-mysql-plain colored" title="MySQL"></i>
     </div>
   </section>
 
-  <!-- Experience will be inserted here later -->
   
 <section id="experience">
-  <h2>Work Experience</h2>
+  <h2>Professional Experience</h2>
+  <div class="timeline">
 
-  <div class="experience-item">
-    <h3>Senior Consultant (Mobile Lead) – Infosys</h3>
-    <span class="duration">2018 – Present</span>
-    <p>Led Android and cross-platform mobile projects. Managed a team of 20+, architected multiple large-scale apps.</p>
-  </div>
+    <div class="timeline-item">
+      <img src="logos/infosys.png" alt="Infosys Logo" class="company-logo"/>
+      <div>
+        <h3>Infosys Limited</h3>
+        <p><strong>Senior Consultant (Mobile Lead)</strong></p>
+        <p>Jun 2021 – Present · Chennai, India</p>
+      </div>
+    </div>
 
-  <div class="experience-item">
-    <h3>OBC – AirLiquide</h3>
-    <span class="duration">Project</span>
-    <p>End-to-end trip tracking Android app for oil & gas logistics with offline support. Used Kotlin, Hangfire, MVVM.</p>
-  </div>
+    <div class="timeline-item">
+      <img src="logos/agnoshin.png" alt="AgnoShin Logo" class="company-logo"/>
+      <div>
+        <h3>AgnoShin Technologies</h3>
+        <p><strong>Lead Software Engineer</strong></p>
+        <p>Sep 2020 – May 2021 · Chennai, India</p>
+      </div>
+    </div>
 
-  <div class="experience-item">
-    <h3>Home Hospital</h3>
-    <span class="duration">Project</span>
-    <p>BLE-integrated Android app for patient monitoring and synchronization with medical devices. Used Kotlin, Firebase.</p>
-  </div>
+    <div class="timeline-item">
+      <img src="logos/3edge.png" alt="3Edge Logo" class="company-logo"/>
+      <div>
+        <h3>3Edge Solutions</h3>
+        <p><strong>Team Lead</strong></p>
+        <p>Jul 2016 – Aug 2020 · Chennai, India</p>
+        <p><strong>Senior Software Associate</strong></p>
+        <p>Oct 2015 – Jun 2016 · Chennai, India</p>
+      </div>
+    </div>
 
-  <div class="experience-item">
-    <h3>Dial2Go</h3>
-    <span class="duration">Project</span>
-    <p>Home maintenance Android app with appointments, Room DB, Firebase. Sole developer and project lead.</p>
-  </div>
+    <div class="timeline-item">
+      <img src="logos/kkmsoft.png" alt="KKM Soft Logo" class="company-logo"/>
+      <div>
+        <h3>KKM Soft Pvt. Ltd.</h3>
+        <p><strong>Android Developer</strong></p>
+        <p>Apr 2013 – Jul 2014 · Chennai, India</p>
+      </div>
+    </div>
 
-  <div class="experience-item">
-    <h3>D4E Club</h3>
-    <span class="duration">Project</span>
-    <p>Android app linking students, colleges, industries. Sole developer using Java, Liferay SDK, MVP architecture.</p>
-  </div>
+    <div class="timeline-item">
+      <img src="logos/soffel.png" alt="Soffel Logo" class="company-logo"/>
+      <div>
+        <h3>Soffel Technologies</h3>
+        <p><strong>Android Developer</strong></p>
+        <p>Feb 2012 – Mar 2013 · Chennai, India</p>
+      </div>
+    </div>
 
-  <div class="experience-item">
-    <h3>Studawn</h3>
-    <span class="duration">Project</span>
-    <p>Educational community Android app. Designed and developed as solo contributor. Java, MVP architecture.</p>
-  </div>
-
-  <div class="experience-item">
-    <h3>Service Tracking System – Mandarin Opto Medic</h3>
-    <span class="duration">Project</span>
-    <p>Maintenance tracking Android app with scheduling, feedback, and offline sync. Led mobile and back-office teams.</p>
-  </div>
-
-  <div class="experience-item">
-    <h3>Mopria</h3>
-    <span class="duration">Project</span>
-    <p>Android printing plugin using NDK and RFC2911 standard. Responsible for core backend and UI.</p>
-  </div>
-
-  <div class="experience-item">
-    <h3>PAYS</h3>
-    <span class="duration">Project</span>
-    <p>Hybrid Ionic app for coupon-based loyalty program. Led full-stack team, integrated Euronet APIs.</p>
-  </div>
-
-  <div class="experience-item">
-    <h3>Alpha Clinical Systems</h3>
-    <span class="duration">Project</span>
-    <p>Multiple Android and hybrid apps for patient data, health tracking, PDF forms. Worked with FCM, pdfmake.</p>
-  </div>
-
-  <div class="experience-item">
-    <h3>CTBIM</h3>
-    <span class="duration">Project</span>
-    <p>GPS-based Android app for construction tracking. Managed full stack including image/video capture and upload.</p>
-  </div>
-
-  <div class="experience-item">
-    <h3>Asset Management & Order Placement</h3>
-    <span class="duration">Project</span>
-    <p>Developed Android apps for asset status and retail order tracking with NFC and SOAP integration.</p>
-  </div>
-
-  <div class="experience-item">
-    <h3>Cable TV Network</h3>
-    <span class="duration">Project</span>
-    <p>Designed Android app for customer subscription and billing. Used SOAP, NFC, with offline support.</p>
   </div>
 </section>
 
 
-  <section id="contact" data-aos="fade-up">
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:lakshmipathy.rakesh@gmail.com">lakshmipathy.rakesh@gmail.com</a></p>
     <p>Phone: +91 9962778801</p>
@@ -140,9 +113,6 @@
   <footer>
     <p>© 2025 Rakesh Lakshmipathy. All rights reserved.</p>
   </footer>
-
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
