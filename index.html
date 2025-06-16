@@ -1,143 +1,109 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rakesh Lakshmipathy - Mobile Lead Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/animations.css" />
-    <link rel="stylesheet" href="assets/css/theme-dark.css" />
-    <link rel="icon" href="assets/images/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakesh Lakshmipathy | Mobile Lead Portfolio</title>
+  <link rel="stylesheet" href="assets/css/vcard-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="assets/images/favicon.png">
 </head>
-<script src="assets/js/main.js"></script>
 
 <body>
-    <div class="container">
-        <header>
-            <img src="assets/images/profile.jpeg" alt="Rakesh Lakshmipathy" class="profile-pic animate-fadein" />
-            <h1 class="animate-slidein">Rakesh Lakshmipathy</h1>
-            <p class="subtitle">Senior Consultant (Mobile Lead) at Infosys</p>
-            <p class="location">📍 Chennai, India</p>
-        </header>
+  <div class="site-wrapper">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="assets/images/profile.jpeg" alt="Rakesh Lakshmipathy">
+        <h1>Rakesh Lakshmipathy</h1>
+        <p>Mobile Lead @ Infosys</p>
+      </div>
+      <nav class="menu">
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="#resume"><i class="fa fa-file"></i> Resume</a>
+        <a href="#certifications"><i class="fa fa-certificate"></i> Certifications</a>
+        <a href="#projects"><i class="fa fa-code"></i> Projects</a>
+        <a href="#testimonials"><i class="fa fa-comment"></i> Testimonials</a>
+        <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+      </nav>
+      <footer>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </footer>
+    </aside>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <main class="content">
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Senior Consultant with 10+ years of experience in Android and cross-platform mobile development. Passionate about clean architecture, scalable code, and mentoring teams to deliver high-quality mobile apps.</p>
+      </section>
 
-        <section id="about" class="animate-slidein">
-            <h2>About Me</h2>
-            <p>Birthday: 15 Feb 1990</p>
-            <p>Experienced Android & cross-platform mobile developer leading enterprise-grade mobile solutions at Infosys. Skilled in Kotlin, Java, Jetpack Compose, .NET MAUI, Ionic, and more.</p>
-        </section>
+      <section id="resume" class="section">
+        <h2>Resume</h2>
+        <ul class="timeline">
+          <li>
+            <h3>Senior Consultant, Infosys</h3>
+            <span>2018 - Present</span>
+            <p>Leading mobile development projects using Kotlin, Flutter, and React Native. Architecting scalable solutions and guiding teams across geographies.</p>
+          </li>
+          <li>
+            <h3>Mobile Developer, XYZ Corp</h3>
+            <span>2015 - 2018</span>
+            <p>Developed and maintained Android apps with 1M+ downloads, integrated REST APIs, and optimized performance.</p>
+          </li>
+        </ul>
+      </section>
 
-        <section id="resume" class="animate-slidein">
-            <h2>Experience</h2>
-            <!-- Each company entry includes logo and role timeline -->
-            <div class="experience">
-                <img src="assets/logos/infosys.png" alt="Infosys" class="logo" />
-                <h3>Senior Consultant (Mobile Lead)</h3>
-                <p>Infosys — Jun 2021 – Present</p>
-            </div>
-            <div class="experience">
-                <img src="assets/logos/agnoshin.png" alt="AgnoShin" class="logo" />
-                <h3>Lead Software Engineer</h3>
-                <p>AgnoShin Technologies — Sep 2020 – May 2021 · Chennai</p>
-            </div>
-            <div class="experience">
-                <img src="assets/logos/3edge.png" alt="3Edge" class="logo" />
-                <h3>Team Lead</h3>
-                <p>3Edge Solutions — Jul 2016 – Aug 2020</p>
-                <h3>Senior Software Associate</h3>
-                <p>3Edge Solutions — Oct 2015 – Jun 2016</p>
-                <h3>Software Associate</h3>
-                <p>3Edge Solutions — Oct 2014 – Oct 2015</p>
-            </div>
-            <div class="experience">
-                <img src="assets/logos/kkmsoft.png" alt="KKM Soft" class="logo" />
-                <h3>Android Developer</h3>
-                <p>KKM Soft Pvt. Ltd. — Apr 2013 – Jul 2014</p>
-            </div>
-            <div class="experience">
-                <img src="assets/logos/soffel.png" alt="Soffel" class="logo" />
-                <h3>Android Developer</h3>
-                <p>Soffel Technologies — Feb 2012 – Mar 2013 · Chennai</p>
-            </div>
+      <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Google Android Developer Certification</li>
+          <li>Scrum Master Certified (SMC)</li>
+          <li>Infosys Certified Enterprise Architect</li>
+        </ul>
+      </section>
 
-            <h2>Education</h2>
-            <ul>
-                <li>B.E. (Electronics & Communication), Kanchi Pallavan Engineering College (Anna University), Aug 2007 – Apr 2011</li>
-                <li>Higher Secondary Certificate, Sri Ramakrishna Mission Vidyalaya, Apr 2007</li>
-                <li>SSLC, same school, Apr 2005</li>
-            </ul>
-        </section>
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Fintech App</h3>
+            <p>Built a secure mobile banking app using Kotlin and Jetpack Compose. Supports biometric login and live transactions.</p>
+          </div>
+          <div class="card">
+            <h3>eLearning Platform</h3>
+            <p>Designed and developed a Flutter-based learning app with video streaming, quizzes, and offline mode support.</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="certifications" class="animate-fadein">
-            <h2>Certifications</h2>
-            <ul>
-                <li><a href="https://www.udemy.com/certificate/UC-da90adc4-e7db-4c46-b07f-d3ea43d83ee3/">Python - Udemy (Nov 2022)</a></li>
-                <li><a href="https://www.linkedin.com/...">Advanced C# - Infosys (Aug 2024)</a></li>
-                <li><a href="https://www.linkedin.com/...">Ionic Framework - Infosys (Aug 2024)</a></li>
-                <li><a href="https://www.linkedin.com/...">.NET MAUI - Infosys (Jul 2024)</a></li>
-                <li><a href="https://www.linkedin.com/...">Generative AI - Infosys (Feb 2024)</a></li>
-            </ul>
-            <h3>Recognition</h3>
-            <p><a href="https://media.licdn.com/dms/image/...">Infosys Insta Awards - June 2024</a></p>
-        </section>
+      <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <blockquote>
+          <p>"Rakesh is a brilliant team lead. His attention to detail and ability to guide teams is top-notch."</p>
+          <cite>— Project Manager, Infosys</cite>
+        </blockquote>
+        <blockquote>
+          <p>"One of the most reliable mobile devs I've worked with — always delivers on time with clean code."</p>
+          <cite>— Client, Fintech Startup</cite>
+        </blockquote>
+      </section>
 
-        <section id="testimonials" class="animate-fadein">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p><strong>Taranbir Kaur:</strong> Rakesh has strong technical expertise in Android, Kotlin, Jetpack Compose, and modern architecture components.</p>
-            </div>
-            <div class="testimonial">
-                <p><strong>Sundeep Daga:</strong> Dedicated and talented individual, valuable asset to any organization.</p>
-            </div>
-            <div class="testimonial">
-                <p><strong>Vasanth Ganesh Bhaskaran:</strong> Keen in observing requirements and delivering timely. Great techie and team driver.</p>
-            </div>
-            <div class="testimonial">
-                <p><strong>Sathya Namasivayam:</strong> Backed project challenges with tech expertise and helped deliver student-centric apps effectively.</p>
-            </div>
-            <div class="testimonial">
-                <p><strong>Jessy S:</strong> Quick learner, mentored juniors, and focused on customer needs with feasible solutions.</p>
-            </div>
-            <div class="testimonial">
-                <p><strong>Rajkumar Kalaimani:</strong> Cool and smart leader, great mentor, technically very strong.</p>
-            </div>
-        </section>
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
 
-        <section id="blogs" class="animate-fadein">
-            <h2>Blogs</h2>
-            <ul>
-                <li><a href="https://rakeshandroid.blogspot.com/">Android Blog</a></li>
-                <li><a href="https://rakeshapps.blogspot.com/">Apps Blog</a></li>
-            </ul>
-            <p><strong>Stack Overflow:</strong> <a href="https://stackoverflow.com/users/2409495/rakesh-l">Rakesh's Profile</a></p>
-        </section>
-
-        <section id="contact" class="animate-slidein">
-            <h2>Contact Me</h2>
-            <form action="#">
-                <input type="text" placeholder="Name" required />
-                <input type="email" placeholder="Email" required />
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <p>📍 Location: <a href="https://maps.google.com/?q=12.733422557132043,80.00921735350386">View on Map</a></p>
-        </section>
-
-        <footer>
-            <p>© 2025 Rakesh Lakshmipathy</p>
-        </footer>
-    </div>
+  <script src="assets/js/vcard-script.js"></script>
 </body>
-
 </html>
