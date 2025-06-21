@@ -176,3 +176,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function openImageModal(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+}
+
+function closeImageModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
