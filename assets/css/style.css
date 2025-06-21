@@ -345,10 +345,7 @@ main {
     text-align: center;
 }
 .info-content .downloadcv {
-    width: max-content;
     display: inline-block;
-    align-items: center; /* Vertically center text */
-    justify-content: center; /* Horizontally center text */
     text-decoration: none;
     border-radius: 25px;
     background-color: #00ffd5;
