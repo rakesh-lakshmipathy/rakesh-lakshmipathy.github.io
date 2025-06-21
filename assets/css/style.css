@@ -346,7 +346,7 @@ main {
 }
 .info-content .downloadcv {
     width: max-content;
-    display: inline-flex;
+    display: inline-block;
     align-items: center; /* Vertically center text */
     justify-content: center; /* Horizontally center text */
     text-decoration: none;
