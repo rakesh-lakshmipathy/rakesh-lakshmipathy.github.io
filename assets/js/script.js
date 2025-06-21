@@ -134,7 +134,26 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+function copyEmail() {
+    const email = "lakshmipathy.rakesh@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+        showToast("Email copied to clipboard!");
+    }).catch(err => {
+        console.error("Failed to copy email: ", err);
+    });
+}
 
+function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.style.visibility = "visible";
+    toast.style.opacity = "1";
+
+    setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.visibility = "hidden";
+    }, 2000); // toast disappears after 2 seconds
+}
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");

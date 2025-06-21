@@ -316,12 +316,12 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 152px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 500px; }
 
 .sidebar-info {
     position: relative;
@@ -1337,7 +1337,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar.active { max-height: 584px; }
 
-  .sidebar-info { gap: 25px; }
+  .sidebar-info { row-gap: 30px; }
 
   .avatar-box { border-radius: 30px; }
 
@@ -1840,7 +1840,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box img { width: 150px; }
 
   .info-content .name {
-    white-space: nowrap;
     text-align: center;
   }
 
@@ -1892,5 +1891,13 @@ textarea.form-input::-webkit-resizer { display: none; }
         }
     }
 
-   
+    .copy-email-btn ion-icon {
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .copy-email-btn:hover ion-icon {
+        color: #00ffd5;
+    }
 }

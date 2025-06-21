@@ -46,7 +46,7 @@
             </figure>
 
             <div class="info-content">
-                <h3 class="name" title="Rakesh Lakshmipathy">Rakesh L</h3>
+                <h3 class="name" title="Rakesh Lakshmipathy">Rakesh Lakshmipathy</h3>
 
                 <p class="title">Mobile Lead at Infosys </p>
 
@@ -55,7 +55,7 @@
                    download
                    target="_blank"
                    rel="noopener noreferrer"
-                   style="display: inline-block; margin-top: 12px; margin-left: 8px; padding: 10px 20px; border-radius: 25px; background-color: #00ffd5; color: #000; font-weight: 600; text-decoration: none;">
+                   style="display: inline-block; margin-top: 12px; margin-left: 30px; padding: 10px 20px; border-radius: 25px; background-color: #00ffd5; color: #000; font-weight: 600; text-decoration: none;">
                     <i class="fas fa-download"></i> Download CV
                 </a>
             </div>
@@ -81,9 +81,13 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:lakshmipathy.rakesh@gmail.com" class="contact-link">lakshmipathy.rakesh@gmail.com</a>
+                <p class="contact-title">Email</p>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <a id="email-text" href="mailto:lakshmipathy.rakesh@gmail.com" class="contact-link">lakshmipathy.rakesh@gmail.com</a>
+                    <button onclick="copyEmail()" class="copy-email-btn" title="Copy Email" style="background: none; border: none; cursor: pointer; padding: 0;">
+                        <ion-icon name="copy-outline"></ion-icon>
+                    </button>
+                </div>
             </div>
 
           </li>
@@ -111,7 +115,7 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1990-02-15">Feb 15, 1990</time>
+              <time datetime="1990-02-15">February 15</time>
             </div>
 
           </li>
@@ -1176,7 +1180,26 @@
 
 
 
-
+  <div id="toast" style="
+  visibility: hidden;
+  min-width: 180px;
+  background-color: #00ffd5;
+  color: #000;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: visibility 0s, opacity 0.5s ease;
+  opacity: 0;
+">
+      Email copied to clipboard!
+  </div>
 
 
   <!--
