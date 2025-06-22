@@ -1987,3 +1987,64 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.skills-category h4 {
+    
+    margin-bottom: 16px;
+    color: #00ffd5;
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 25px;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+    .skill-box:hover {
+        transform: translateY(-6px);
+    }
+
+    .skill-box img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+        object-fit: contain;
+    }
+
+    .skill-box p {
+        font-size: 0.9rem;
+        color: #fff;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .skill-box i {
+        font-size: 64px;
+        margin-bottom: 12px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        filter: drop-shadow(0 0 4px #00ffd5);
+    }
+
+    .skill-box:hover i {
+        transform: scale(1.15);
+        filter: drop-shadow(0 0 10px #00ffd5);
+    }
