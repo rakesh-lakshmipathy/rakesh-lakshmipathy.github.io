@@ -1954,15 +1954,16 @@ textarea.form-input::-webkit-resizer { display: none; }
         }
     }
 
-    .copy-email-btn ion-icon {
-        color: #fff;
-        font-size: 18px;
-        transition: color 0.3s ease;
-    }
+    
+}
+.copy-email-btn ion-icon {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
-    .copy-email-btn:hover ion-icon {
-        color: #00ffd5;
-    }
+.copy-email-btn:hover ion-icon {
+    color: #00ffd5;
 }
 .timeline-item span {
     display: inline-block;
