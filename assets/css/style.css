@@ -1957,14 +1957,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     
 }
 .copy-email-btn ion-icon {
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
 
-.copy-email-btn:hover ion-icon {
-    color: #00ffd5;
-}
+    .copy-email-btn:hover ion-icon {
+        color: #00ffd5;
+    }
 .timeline-item span {
     display: inline-block;
     white-space: nowrap;
@@ -2066,15 +2066,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 255, 213, 0.15);
     transition: transform 0.3s ease;
+    gap: 20px;
 }
-
     .experience-item:hover {
         transform: translateY(-6px);
     }
 
 .company-logo {
-    width: 64px;
-    height: 64px;
+    width: 92px;
+    height: 92px;
     object-fit: contain;
     margin-right: 24px;
     border-radius: 12px;
