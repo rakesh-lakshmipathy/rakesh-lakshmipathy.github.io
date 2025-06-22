@@ -187,3 +187,37 @@ function openImageModal(imageSrc) {
 function closeImageModal() {
     document.getElementById("imageModal").style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const experienceItems = document.querySelectorAll("section.timeline .timeline-item span[data-from]");
+
+    experienceItems.forEach((item) => {
+        const from = item.getAttribute("data-from");
+        const to = item.getAttribute("data-to");
+
+        const [fromYear, fromMonth] = from.split("-").map(Number);
+        const fromDate = new Date(fromYear, fromMonth - 1);
+
+        let toDate;
+        if (to.toLowerCase() === "present") {
+            toDate = new Date();
+        } else {
+            const [toYear, toMonth] = to.split("-").map(Number);
+            toDate = new Date(toYear, toMonth - 1);
+        }
+
+        let years = toDate.getFullYear() - fromDate.getFullYear();
+        let months = toDate.getMonth() - fromDate.getMonth();
+
+        if (months < 0) {
+            years -= 1;
+            months += 12;
+        }
+
+        const durationText = ` (${years} year${years !== 1 ? 's' : ''}${months > 0 ? `, ${months} month${months !== 1 ? 's' : ''}` : ''})`;
+        const durationSpan = item.querySelector(".duration");
+        if (durationSpan) {
+            durationSpan.textContent = durationText;
+        }
+    });
+});

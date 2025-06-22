@@ -1928,7 +1928,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
-
+    span.duration {
+        font-size: 0.9em;
+        color: #ccc;
+        font-style: italic;
+        margin-left: 6px;
+        white-space: nowrap;
+    }
 
   /**
 	 * RESUME
@@ -1956,4 +1962,28 @@ textarea.form-input::-webkit-resizer { display: none; }
     .copy-email-btn:hover ion-icon {
         color: #00ffd5;
     }
+}
+.timeline-item span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.timeline-item .duration {
+    font-size: 0.9em;
+    color: #ccc;
+    font-style: italic;
+    margin-left: 6px;
+}
+
+.skill-tag {
+    display: inline-block;
+  
+    border: 2px solid #00ffd5;
+    color: #00ffd5;
+    border-radius: 20px;
+    padding: 5px 12px;
+    margin: 4px 6px 4px 0;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
