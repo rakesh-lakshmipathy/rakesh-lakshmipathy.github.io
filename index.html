@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Lakshmipathy - Personal Portfolio</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+
+<body>
+
+    <!--
+      - #MAIN
+    -->
+
+    <main>
+
+        <!--
+          - #SIDEBAR
+        -->
+
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="./assets/images/my-avatar.jpeg" alt="Rakesh Lakshmipathy" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h3 class="name" title="Rakesh Lakshmipathy">Rakesh Lakshmipathy</h3>
+
+                    <p class="title">Mobile Lead at Infosys </p>
+
+
+                    <a class="downloadcv" href="assets/Rakesh_MobileLead.pdf"
+                       download
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <a id="email-text" href="mailto:lakshmipathy.rakesh@gmail.com" class="contact-link">lakshmipathy.rakesh@gmail.com</a>
+                                <button onclick="copyEmail()" class="copy-email-btn" title="Copy Email" style="background: none; border: none; cursor: pointer; padding: 0;">
+                                    <ion-icon name="copy-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+919962778801" class="contact-link">+91 9962778801</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="1990-02-15">February 15</time>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Infosys, Mahindra World City, Chennai, India</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/rakesh-lakshmipathy-72796b175/" class="social-link" target="_blank">
+                            <ion-icon name="logo-linkedIn"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://stackoverflow.com/users/2409495/rakesh-l?tab=profile" class="social-link" target="_blank">
+                            <ion-icon name="logo-stackoverflow"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/rakesh.lakshmipathy" class="social-link" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/kaalam.namadhu" class="social-link" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+
+
+        <!--
+          - #main-content
+        -->
+
+        <div class="main-content">
+
+            <!--
+              - #NAVBAR
+            -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Achievements</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Blog</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+
+
+            <!--
+              - #ABOUT
+            -->
+
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I’m a mobile technology expert with 13+ years of experience delivering Android and hybrid apps using Kotlin, Java, .NET MAUI, and Ionic. I specialize in BLE integration, NFC, REST APIs, Firebase, and scalable architecture, and have also mentored teams and driven innovation in enterprise settings.
+                    </p>
+
+                    <!--   <p>
+                      My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                      Moreover, I
+                      add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                      across your
+                      message and identity in the most creative way. I created web design for many famous brand companies.
+                    </p>  -->
+                </section>
+
+
+                <!--
+                  - service
+                -->
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                <p class="service-item-text">
+                                    Professional development of Android native and cross platform applications using Ionic and MAUI.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-dev.svg" alt="API development icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">API development</h4>
+
+                                <p class="service-item-text">
+                                    High-quality development of APIs at the professional level using Spring boot and .NET.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web design</h4>
+
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a professional level.
+                                </p>
+                            </div>
+
+                        </li>
+
+
+
+
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Content Creation</h4>
+
+                                <p class="service-item-text">
+                                    I make high-quality Informative videos
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <!--
+                  - testimonials
+                -->
+
+                <section class="testimonials">
+
+                    <h3 class="h3 testimonials-title">LinkedIn Testimonials</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-1.png" alt="Sathya Namasivayam" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sathya Namasivayam</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        It's my great pleasure to exuberantly recommend Rakesh Lakshmipathy.
+
+                                        I had an excellent experience working with Rakesh for two complete years for one of our students centric mobile applications. During the time together he proved his tech and application skills and which were truly impressive. Though we made a lot of mistakes in the initial stages he backed us in ways to keep going strong. He is having an extensive knowledge of both web and mobile app development which helps to complete the project as we planned.
+
+                                        I wish him all the success in his career!
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-2.png" alt="Jessy S" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessy S</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Rakesh is a quick learner and hardworking professional who mentored and taught many junior resources and ready them with the technical skills even when the collective learning curve is deep. His ability to focus on customer needs and address the requirements with the timely and feasible solution was impressive. I wish him success.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Taranbir Kaur</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Hi, i had an opportunity to work with Rakesh on my last project. Rakesh has strong technical expertise in Android application development. He is highly skilled in Kotlin, Java, Jetpack Compose, and modern Android architecture components such as ViewModel, LiveData, Room, and Navigation.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sandeep Daga</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Overall, Rakesh is a dedicated and talented individual who would be a valuable asset to any organisation. I strongly recommend them for any future opportunities and am confident that they will excel in any role they take on.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-1.png" alt="Vasanth Ganesh Bhaskaran" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vasanth Ganesh Bhaskaran</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Such a wonderful techie. Keen in observing his requirements and delivering the same in timely manner. As a client i recommend him for his technical aspiration and driving the team .
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </section>
+
+
+                <!--
+                  - testimonials modal
+                -->
+
+                <div class="modal-container" data-modal-container>
+
+                    <div class="overlay" data-overlay></div>
+
+                    <section class="testimonials-modal">
+
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+
+                            <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                            <time datetime="2021-06-14">16 June, 2025</time>
+
+                            <div data-modal-text>
+                                <p>
+                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    lot of experience
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    consectetur adipiscing
+                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!--
+                  - clients
+                -->
+
+                <section class="clients">
+
+                    <h3 class="h3 clients-title">Clients</h3>
+
+                    <ul class="clients-list has-scrollbar">
+
+
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./assets/images/mandarinoptomedic.jpg" alt="client logo">
+                            </a>
+                        </li>
+
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./assets/images/al.png" alt="client logo">
+                            </a>
+                        </li>
+
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./assets/images/alphaclinicalsystems.png" alt="client logo">
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./assets/images/mopria.png" alt="client logo">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./assets/images/biofourmis.png" alt="client logo">
+                            </a>
+                        </li>
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+              - #RESUME
+            -->
+
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="education-section">
+
+                    <div class="title-wrapper">
+                      
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <div class="education-grid">
+
+                        <div class="education-item">
+                            <div class="education-details">
+                                <h4 class="h4">Bachelor of Engineering (ECE)</h4>
+                                <p class="education-institution">Kanchi Pallavan Engineering College, Anna University</p>
+                                <p class="education-duration">Aug 2007 – Apr 2011</p>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-details">
+                                <h4 class="h4">Higher Secondary Certificate</h4>
+                                <p class="education-institution">Sri Ramakrishna Mission Vidyalaya Boys Hr. Sec. School</p>
+                                <p class="education-duration">Apr 2007</p>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-details">
+                                <h4 class="h4">SSLC</h4>
+                                <p class="education-institution">Sri Ramakrishna Mission Vidyalaya Boys Hr. Sec. School</p>
+                                <p class="education-duration">Apr 2005</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section style =" margin-top: 70px" class="experience-section">
+
+                    <div class="title-wrapper">
+                     
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <div class="experience-grid">
+
+                        <div class="experience-item">
+                            <img src="./assets/images/logos/infosys.png" alt="Infosys logo" class="company-logo">
+                            <div class="experience-details">
+                                <h4 class="h4">Senior Consultant (Mobile Lead)</h4>
+                                <p class="experience-duration">Jun 2021 – Present</p>
+                                <p class="experience-company">Infosys</p>
+                                <p class="experience-skills">
+                                    <span class="skill-tag">Android</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Kotlin</span>
+                                    <span class="skill-tag">Ionic</span>
+                                    <span class="skill-tag">Angular</span>
+                                    <span class="skill-tag">MAUI</span>
+                                    <span class="skill-tag">Xamarin</span>
+                                    <span class="skill-tag">C#</span>
+                                    <span class="skill-tag">Leadership</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="./assets/images/logos/agnoshin.png" alt="AgnoShin logo" class="company-logo">
+                            <div class="experience-details">
+                                <h4 class="h4">Lead Software Engineer</h4>
+                                <p class="experience-duration">Sep 2020 – May 2021</p>
+                                <p class="experience-company">AgnoShin Technologies</p>
+                                <p class="experience-skills">
+                                    <span class="skill-tag">Android</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Kotlin</span>
+                                    <span class="skill-tag">Leadership</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="./assets/images/logos/3edge.jpeg" alt="3Edge logo" class="company-logo">
+                            <div class="experience-details">
+                                <h4 class="h4">Team Lead</h4>
+                                <p class="experience-duration">Oct 2014 – Aug 2020</p>
+                                <p class="experience-company">3Edge Solutions</p>
+                                <p class="experience-skills">
+                                    <span class="skill-tag">Android</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Kotlin</span>
+                                    <span class="skill-tag">Ionic</span>
+                                    <span class="skill-tag">Angular</span>
+                                    <span class="skill-tag">Spring boot</span>
+                                    <span class="skill-tag">Leadership</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="./assets/images/logos/kkmsoft.jpeg" alt="KKM Soft logo" class="company-logo">
+                            <div class="experience-details">
+                                <h4 class="h4">Android Developer</h4>
+                                <p class="experience-duration">Apr 2013 – Jul 2014</p>
+                                <p class="experience-company">KKM Soft Pvt. Ltd.</p>
+                                <p class="experience-skills">
+                                    <span class="skill-tag">Android</span>
+                                    <span class="skill-tag">Java</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <img src="./assets/images/logos/soffel.png" alt="Soffel logo" class="company-logo">
+                            <div class="experience-details">
+                                <h4 class="h4">Android Developer</h4>
+                                <p class="experience-duration">Feb 2012 – Mar 2013</p>
+                                <p class="experience-company">Soffel Technologies</p>
+                                <p class="experience-skills">
+                                    <span class="skill-tag">Android</span>
+                                    <span class="skill-tag">Java</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="skill">
+                    <h3 style =" margin-top: 70px" class="h3 skills-title">My Skills</h3>
+
+                    <div class="skills-wrapper">
+
+                        <!-- Frontend Skills -->
+                        <div class="skills-category">
+                            <h4 class="h4">Frontend</h4>
+                            <div class="skills-grid">
+                                <div class="skill-box">
+                                    <i class="devicon-android-plain colored"></i>
+                                    <p>Android</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-kotlin-plain colored"></i>
+                                    <p>Kotlin</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-java-plain colored"></i>
+                                    <p>Java</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-ionic-original colored"></i>
+                                    <p>Ionic</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-angularjs-plain colored"></i>
+                                    <p>Angular</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-xamarin-original colored"></i>
+                                    <p>Xamarin</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-dotnetcore-plain colored"></i>
+                                    <p>.NET MAUI</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Backend Skills -->
+                        <div class="skills-category">
+                            <h4 class="h4">Backend</h4>
+                            <div class="skills-grid">
+                                <div class="skill-box">
+                                    <i class="devicon-csharp-plain colored"></i>
+                                    <p>C#</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-spring-plain colored"></i>
+                                    <p>Spring Boot</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-dot-net-plain colored"></i>
+                                    <p>.NET</p>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="devicon-python-plain colored"></i>
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+              - #PORTFOLIO
+            -->
+
+            <article class="portfolio" data-page="achievements">
+
+                <header>
+                    <h2 class="h2 article-title">Achievements</h2>
+                </header>
+
+                <section class="projects">
+
+                    <ul class="filter-list">
+
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Certifications</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Recognitions</button>
+                        </li>
+
+                    </ul>
+
+                    <div class="filter-select-box">
+
+                        <button class="filter-select" data-select>
+
+                            <div class="select-value" data-selecct-value>Select category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+
+                        </button>
+
+                        <ul class="select-list">
+
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Certifications</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Recognitions</button>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li class="project-item  active" data-filter-item data-category="certifications">
+                            <a href="javascript:void(0);" onclick="openImageModal('./assets/images/MAUI-Infosys.jpeg')">
+
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/MAUI-Infosys.jpeg" alt="cert" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Infosys - MAUI Certification</h3>
+
+                                <p class="project-category">Certifications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="certifications">
+                            <a href="javascript:void(0);" onclick="openImageModal('./assets/images/Ionic-Infosys.jpeg')">
+
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/Ionic-Infosys.jpeg" alt="cert" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Infosys - Ionic Certification</h3>
+
+                                <p class="project-category">Certifications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="certifications">
+                            <a href="javascript:void(0);" onclick="openImageModal('./assets/images/Advanced-C-Sharp-Infosys.jpeg')">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/Advanced-C-Sharp-Infosys.jpeg" alt="cert" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Infosys - Advanced C# Certification</h3>
+
+                                <p class="project-category">Certifications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="certifications">
+                            <a href="javascript:void(0);" onclick="openImageModal('./assets/images/generative-ai-infosys.png')">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/generative-ai-infosys.png" alt="cert" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Infosys - Generative AI Landscape Certification</h3>
+
+                                <p class="project-category">Certifications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="certifications">
+                            <a href="https://www.udemy.com/certificate/UC-da90adc4-e7db-4c46-b07f-d3ea43d83ee3/" target="_blank">
+
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/Udemy-Python-Certification.png" alt="cert" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Udemy - Python Certification</h3>
+
+                                <p class="project-category">Certifications</p>
+
+                            </a>
+                        </li>
+
+
+                        <li class="project-item  active" data-filter-item data-category="recognitions">
+                            <a href="javascript:void(0);" onclick="openImageModal('./assets/images/insta-award-june-2024.jpeg')">
+
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/insta-award-june-2024.jpeg" alt="cert" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Infosys Insta Awards - June 2024</h3>
+
+                                <p class="project-category">Recognitions</p>
+
+                            </a>
+                        </li>
+
+                          <li class="project-item  active" data-filter-item data-category="recognitions">
+                            <a href="javascript:void(0);" onclick="openImageModal('./assets/images/reap-infosys.png')">
+
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/reap-infosys.png" alt="cert" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">R.E.A.P - Infosys[Q1 2025-26]</h3>
+
+                                <p class="project-category">Recognitions</p>
+
+                            </a>
+                        </li>
+
+
+
+
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+              - #BLOG
+            -->
+
+            <article class="blog" data-page="blog">
+
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+
+                    <ul class="blog-posts-list">
+
+                        <li class="blog-post-item">
+                            <a href="https://rakeshandroid.blogspot.in" target="_blank">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/androidblog.png" alt="Android Blog" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Android</p>
+
+                                        <span class="dot"></span>
+
+                                        <time datetime="2025-06-16">June 16, 2025</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Android Blog</h3>
+
+                                    <p class="blog-text">
+                                        Talks about Android technology
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://rakeshapps.blogspot.in" target="_blank">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/apps.png" alt="Personal apps" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Personal apps</p>
+
+                                        <span class="dot"></span>
+
+                                        <time datetime="2025-06-16">June 16, 2025</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Personal apps</h3>
+
+                                    <p class="blog-text">
+                                        Lists out some of my apps
+                                    </p>
+
+                                </div>
+
+                            </a>
+                        </li>
+
+
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+              - #CONTACT
+            -->
+
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="https://www.google.com/maps?q=12.733422557132043,80.00921735350386&hl=es;z=14&output=embed"
+                                width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <div id="toast" style="
+  visibility: hidden;
+  min-width: 180px;
+  background-color: #00ffd5;
+  color: #000;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: visibility 0s, opacity 0.5s ease;
+  opacity: 0;
+">
+        Email copied to clipboard!
+    </div>
+
+
+    <!--
+      - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
