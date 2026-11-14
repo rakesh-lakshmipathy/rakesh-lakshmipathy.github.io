@@ -180,10 +180,18 @@ navigationLinks.forEach((link) => {
 
 // Articles category filters
 const articleFilterButtons = document.querySelectorAll("[data-article-filter]");
-const articleFilterItems = document.querySelectorAll(".article-post-item[data-article-category]");
+const articleList = document.querySelector(".article-posts-list");
+const articleFilterItems = [...document.querySelectorAll(".article-post-item[data-article-category]")];
 const articleFilterStatus = document.querySelector(".article-filter-status");
 const articleKeywordSearch = document.querySelector("#article-keyword-search");
 let selectedArticleCategory = "all";
+
+articleFilterItems.sort((first, second) => {
+  const firstDate = first.querySelector("time")?.getAttribute("datetime") || "";
+  const secondDate = second.querySelector("time")?.getAttribute("datetime") || "";
+  return secondDate.localeCompare(firstDate);
+});
+articleFilterItems.forEach((item) => articleList.append(item));
 
 const applyArticleFilters = function () {
   const keyword = articleKeywordSearch.value.trim().toLowerCase();
