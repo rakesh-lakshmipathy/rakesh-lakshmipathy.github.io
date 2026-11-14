@@ -177,6 +177,35 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// Articles category filters
+const articleFilterButtons = document.querySelectorAll("[data-article-filter]");
+const articleFilterItems = document.querySelectorAll(".article-post-item[data-article-category]");
+const articleFilterStatus = document.querySelector(".article-filter-status");
+
+articleFilterButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const selectedCategory = this.dataset.articleFilter;
+    let visibleCount = 0;
+
+    articleFilterItems.forEach((item) => {
+      const matches = selectedCategory === "all" || item.dataset.articleCategory === selectedCategory;
+      item.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    articleFilterButtons.forEach((filterButton) => {
+      const isSelected = filterButton === this;
+      filterButton.classList.toggle("active", isSelected);
+      filterButton.setAttribute("aria-pressed", String(isSelected));
+    });
+
+    const categoryLabel = this.textContent.trim();
+    articleFilterStatus.textContent = selectedCategory === "all"
+      ? `Showing all ${visibleCount} articles`
+      : `Showing ${visibleCount} ${categoryLabel} article${visibleCount === 1 ? "" : "s"}`;
+  });
+});
+
 function openImageModal(imageSrc) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");

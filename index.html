@@ -1088,10 +1088,17 @@
                     <h2 class="h2 article-title">Articles</h2>
                 </header>
 
+                <ul class="article-filter-list" aria-label="Filter articles">
+                    <li><button class="article-filter-button active" type="button" data-article-filter="all" aria-pressed="true">All</button></li>
+                    <li><button class="article-filter-button" type="button" data-article-filter="ai/python" aria-pressed="false">AI/Python</button></li>
+                    <li><button class="article-filter-button" type="button" data-article-filter="kotlin/android" aria-pressed="false">Kotlin/Android</button></li>
+                </ul>
+                <p class="article-filter-status" aria-live="polite">Showing all 5 articles</p>
+
                 <section class="blog-posts">
                     <ul class="blog-posts-list article-posts-list">
                         <!-- Supplied bottom-to-top, so the second post appears first in the list. -->
-                        <li class="blog-post-item">
+                        <li class="blog-post-item article-post-item" data-article-category="kotlin/android">
                             <a href="https://www.linkedin.com/pulse/why-do-we-actually-need-repeatonlifecycle-android-rakesh-lakshmipathy-ef8qc/" target="_blank" rel="noopener noreferrer">
                                 <figure class="blog-banner-box">
                                     <img src="./assets/articles/cover_images/repeat-on-lifecycle-android.jpg" alt="Why Do We Actually Need repeatOnLifecycle in Android? article cover" loading="lazy">
@@ -1107,7 +1114,7 @@
                             </a>
                         </li>
 
-                        <li class="blog-post-item">
+                        <li class="blog-post-item article-post-item" data-article-category="kotlin/android">
                             <a href="https://www.linkedin.com/pulse/android-livedata-vs-flow-why-i-prefer-coroutine-based-lakshmipathy-kwqjc/" target="_blank" rel="noopener noreferrer">
                                 <figure class="blog-banner-box">
                                     <img src="./assets/articles/cover_images/android-livedata-vs-flow.jpg" alt="Android LiveData vs Flow: Why I Prefer Flow in Coroutine-Based Applications article cover" loading="lazy">
@@ -1123,7 +1130,7 @@
                             </a>
                         </li>
 
-                        <li class="blog-post-item">
+                        <li class="blog-post-item article-post-item" data-article-category="kotlin/android">
                             <a href="https://www.linkedin.com/pulse/android-flow-from-basics-real-world-production-rakesh-lakshmipathy-cx7dc/" target="_blank" rel="noopener noreferrer">
                                 <figure class="blog-banner-box">
                                     <img src="./assets/articles/cover_images/android-flow-production.jpg" alt="Android Flow: From Basics to Real-World Production Scenarios article cover" loading="lazy">
@@ -1139,7 +1146,7 @@
                             </a>
                         </li>
 
-                        <li class="blog-post-item">
+                        <li class="blog-post-item article-post-item" data-article-category="ai/python">
                             <a href="https://www.linkedin.com/pulse/all-rag-retrieval-augmented-generation-rakesh-lakshmipathy-9ogac/" target="_blank" rel="noopener noreferrer">
                                 <figure class="blog-banner-box">
                                     <img src="./assets/articles/cover_images/all-about-rag-2.jpg" alt="RAG Reranking – How It Works Under the Hood article cover" loading="lazy">
@@ -1153,7 +1160,7 @@
                             </a>
                         </li>
 
-                        <li class="blog-post-item">
+                        <li class="blog-post-item article-post-item" data-article-category="ai/python">
                             <a href="https://www.linkedin.com/pulse/all-rag-retrieval-augmented-generation-rakesh-lakshmipathy-9ogac/" target="_blank" rel="noopener noreferrer">
                                 <figure class="blog-banner-box">
                                     <img src="./assets/articles/cover_images/all-about-rag-1.jpg" alt="All about RAG (Retrieval-Augmented Generation) article cover, version 1" loading="lazy">

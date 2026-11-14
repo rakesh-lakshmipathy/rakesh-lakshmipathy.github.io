@@ -2179,6 +2179,44 @@ textarea.form-input::-webkit-resizer { display: none; }
     color: #aaa;
 }
 
+/* Articles category filters */
+.article-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+}
+
+.article-filter-button {
+  color: var(--light-gray);
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 999px;
+  padding: 9px 15px;
+  font-size: var(--fs-6);
+  transition: var(--transition-1);
+}
+
+.article-filter-button:hover,
+.article-filter-button:focus-visible {
+  border-color: var(--orange-yellow-crayola);
+  color: var(--white-2);
+}
+
+.article-filter-button.active {
+  border-color: var(--orange-yellow-crayola);
+  color: var(--orange-yellow-crayola);
+}
+
+.article-filter-status {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  margin-bottom: 18px;
+}
+
+.article-post-item[hidden] { display: none; }
+
 /* Keep the Articles page as a single-column list at every desktop breakpoint. */
 .article-posts-list { grid-template-columns: 1fr; }
 
