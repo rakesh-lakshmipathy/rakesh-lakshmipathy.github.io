@@ -181,17 +181,39 @@ for (let i = 0; i < navigationLinks.length; i++) {
 const articleFilterButtons = document.querySelectorAll("[data-article-filter]");
 const articleFilterItems = document.querySelectorAll(".article-post-item[data-article-category]");
 const articleFilterStatus = document.querySelector(".article-filter-status");
+const articleKeywordSearch = document.querySelector("#article-keyword-search");
+let selectedArticleCategory = "all";
+
+const applyArticleFilters = function () {
+  const keyword = articleKeywordSearch.value.trim().toLowerCase();
+  let visibleCount = 0;
+
+  articleFilterItems.forEach((item) => {
+    const categoryMatches = selectedArticleCategory === "all" || item.dataset.articleCategory === selectedArticleCategory;
+    const searchableText = `${item.querySelector(".blog-item-title").textContent} ${item.querySelector(".blog-category").textContent}`.toLowerCase();
+    const keywordMatches = keyword === "" || searchableText.includes(keyword);
+    const matches = categoryMatches && keywordMatches;
+
+    item.hidden = !matches;
+    if (matches) visibleCount += 1;
+  });
+
+  const activeButton = [...articleFilterButtons].find((button) => button.dataset.articleFilter === selectedArticleCategory);
+  const categoryLabel = activeButton?.textContent.trim() || "All";
+
+  if (keyword) {
+    const scope = selectedArticleCategory === "all" ? "" : ` in ${categoryLabel}`;
+    articleFilterStatus.textContent = `Showing ${visibleCount} result${visibleCount === 1 ? "" : "s"} for "${articleKeywordSearch.value.trim()}"${scope}`;
+  } else if (selectedArticleCategory === "all") {
+    articleFilterStatus.textContent = `Showing all ${visibleCount} articles`;
+  } else {
+    articleFilterStatus.textContent = `Showing ${visibleCount} ${categoryLabel} article${visibleCount === 1 ? "" : "s"}`;
+  }
+};
 
 articleFilterButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    const selectedCategory = this.dataset.articleFilter;
-    let visibleCount = 0;
-
-    articleFilterItems.forEach((item) => {
-      const matches = selectedCategory === "all" || item.dataset.articleCategory === selectedCategory;
-      item.hidden = !matches;
-      if (matches) visibleCount += 1;
-    });
+    selectedArticleCategory = this.dataset.articleFilter;
 
     articleFilterButtons.forEach((filterButton) => {
       const isSelected = filterButton === this;
@@ -199,12 +221,11 @@ articleFilterButtons.forEach((button) => {
       filterButton.setAttribute("aria-pressed", String(isSelected));
     });
 
-    const categoryLabel = this.textContent.trim();
-    articleFilterStatus.textContent = selectedCategory === "all"
-      ? `Showing all ${visibleCount} articles`
-      : `Showing ${visibleCount} ${categoryLabel} article${visibleCount === 1 ? "" : "s"}`;
+    applyArticleFilters();
   });
 });
+
+articleKeywordSearch.addEventListener("input", applyArticleFilters);
 
 function openImageModal(imageSrc) {
     const modal = document.getElementById("imageModal");

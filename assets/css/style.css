@@ -2215,6 +2215,31 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 18px;
 }
 
+.article-search { max-width: 460px; margin-bottom: 12px; }
+
+.article-search-label {
+  display: block;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  margin: 0 0 8px 2px;
+}
+
+.article-search-input {
+  width: 100%;
+  color: var(--white-2);
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  outline: none;
+  transition: var(--transition-1);
+}
+
+.article-search-input::placeholder { color: var(--light-gray-70); }
+
+.article-search-input:focus { border-color: var(--orange-yellow-crayola); }
+
 .article-post-item[hidden] { display: none; }
 
 /* Keep the Articles page as a single-column list at every desktop breakpoint. */
