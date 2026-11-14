@@ -1143,6 +1143,27 @@ main {
   line-height: 1.6;
 }
 
+/* LinkedIn article covers work best as a compact, readable list. */
+.article-posts-list { grid-template-columns: 1fr; }
+
+.article-posts-list .blog-post-item > a {
+  display: grid;
+  grid-template-columns: minmax(180px, 38%) 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+}
+
+.article-posts-list .blog-banner-box {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+}
+
+.article-posts-list .blog-content { padding: 12px 8px 12px 0; }
+
+.article-posts-list .blog-item-title { margin-bottom: 0; }
+
 
 
 
@@ -2156,4 +2177,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 .education-duration {
     font-size: 0.85rem;
     color: #aaa;
+}
+
+/* Keep the Articles page as a single-column list at every desktop breakpoint. */
+.article-posts-list { grid-template-columns: 1fr; }
+
+@media (max-width: 580px) {
+  .article-posts-list .blog-post-item > a {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .article-posts-list .blog-content { padding: 8px; }
 }
