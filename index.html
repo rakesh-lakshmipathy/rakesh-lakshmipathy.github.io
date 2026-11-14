@@ -15,7 +15,7 @@
     <!--
       - custom css link
     -->
-    <link rel="stylesheet" href="./assets/css/style.css?v=20261114-article-nav-order">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20261114-article-toolbar">
 
     <!--
       - google font link
@@ -1088,14 +1088,15 @@
                     <h2 class="h2 article-title">Articles</h2>
                 </header>
 
-                <ul class="article-filter-list" aria-label="Filter articles">
-                    <li><button class="article-filter-button active" type="button" data-article-filter="all" aria-pressed="true">All</button></li>
-                    <li><button class="article-filter-button" type="button" data-article-filter="ai/python" aria-pressed="false">AI/Python</button></li>
-                    <li><button class="article-filter-button" type="button" data-article-filter="kotlin/android" aria-pressed="false">Kotlin/Android</button></li>
-                </ul>
-                <div class="article-search">
-                    <label class="article-search-label" for="article-keyword-search">Search articles</label>
-                    <input class="article-search-input" id="article-keyword-search" type="search" placeholder="Search by title or topic" autocomplete="off">
+                <div class="article-toolbar">
+                    <ul class="article-filter-list" aria-label="Filter articles">
+                        <li><button class="article-filter-button active" type="button" data-article-filter="all" aria-pressed="true">All</button></li>
+                        <li><button class="article-filter-button" type="button" data-article-filter="ai/python" aria-pressed="false">AI/Python</button></li>
+                        <li><button class="article-filter-button" type="button" data-article-filter="kotlin/android" aria-pressed="false">Kotlin/Android</button></li>
+                    </ul>
+                    <div class="article-search">
+                        <input class="article-search-input" id="article-keyword-search" type="search" aria-label="Search articles by title or topic" placeholder="Search by title or topic" autocomplete="off">
+                    </div>
                 </div>
                 <p class="article-filter-status" aria-live="polite">Showing all 5 articles</p>
 
