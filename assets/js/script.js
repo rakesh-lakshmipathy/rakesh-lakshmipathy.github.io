@@ -160,23 +160,36 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // Match navigation labels to page names so menu order can differ from DOM order.
+const activatePage = function (targetPage) {
+  const activePage = [...pages].find((page) => page.dataset.page === targetPage);
+  if (!activePage) return false;
+
+  pages.forEach((page) => page.classList.toggle("active", page === activePage));
+  navigationLinks.forEach((link) => {
+    link.classList.toggle("active", link.textContent.trim().toLowerCase() === targetPage);
+  });
+
+  return true;
+};
+
+const pageFromHash = () => window.location.hash.slice(1).toLowerCase();
+
 navigationLinks.forEach((link) => {
   link.addEventListener("click", function () {
     const targetPage = this.textContent.trim().toLowerCase();
-    const pageExists = [...pages].some((page) => page.dataset.page === targetPage);
-    if (!pageExists) return;
+    if (!activatePage(targetPage)) return;
 
-    pages.forEach((page) => {
-      page.classList.toggle("active", page.dataset.page === targetPage);
-    });
-
-    navigationLinks.forEach((navLink) => {
-      navLink.classList.toggle("active", navLink === this);
-    });
-
+    if (window.location.hash !== `#${targetPage}`) {
+      window.history.pushState(null, "", `#${targetPage}`);
+    }
     window.scrollTo(0, 0);
   });
 });
+
+const restorePageFromUrl = () => activatePage(pageFromHash() || "about");
+window.addEventListener("popstate", restorePageFromUrl);
+window.addEventListener("hashchange", restorePageFromUrl);
+restorePageFromUrl();
 
 // Articles category filters
 const articleFilterButtons = document.querySelectorAll("[data-article-filter]");
